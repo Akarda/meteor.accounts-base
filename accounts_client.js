@@ -667,8 +667,8 @@ export class AccountsClient extends AccountsCommon {
    */
   onResetPasswordLink(callback) {
     if (this._accountsCallbacks["reset-password"]) {
-      Meteor._debug("Accounts.onResetPasswordLink was called more than once. " +
-        "Only one callback added will be executed.");
+      // Meteor._debug("Accounts.onResetPasswordLink was called more than once. " +
+      //   "Only one callback added will be executed.");
     }
 
     this._accountsCallbacks["reset-password"] = callback;
@@ -694,8 +694,8 @@ export class AccountsClient extends AccountsCommon {
    */
   onEmailVerificationLink(callback) {
     if (this._accountsCallbacks["verify-email"]) {
-      Meteor._debug("Accounts.onEmailVerificationLink was called more than once. " +
-        "Only one callback added will be executed.");
+      // Meteor._debug("Accounts.onEmailVerificationLink was called more than once. " +
+      //   "Only one callback added will be executed.");
     }
 
     this._accountsCallbacks["verify-email"] = callback;
